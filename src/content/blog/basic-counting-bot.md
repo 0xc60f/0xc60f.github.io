@@ -270,6 +270,8 @@ async def highest_streak(ctx):
     highStreak.add_field(name="Highest Streak Breaker", value="<@" + highest_streak_breaker + ">", inline=False)
     highStreak.add_field(name="Highest Streak Break Time", value=str(highest_streak_break_time), inline=False)
     await ctx.respond(embed=highStreak)
+
+bot.run("YOUR_TOKEN_HERE")
 ```
 
 ## You're Done!
@@ -282,7 +284,7 @@ python3 main.py
 
 Keep in mind that this bot will only stay online as long as your terminal is open. If you want to keep it online 24/7, you'll need to use a hosting service like [Oracle Cloud](https://www.oracle.com/cloud/free/), [Google Cloud](cloud.google.com), or [Amazon AWS](aws.amazon.com).
 All these services are reliable and are free or cost very little, but I'd recommend doing your own research and finding the best server provider for you.
-Please do NOT use Heroku or Replit for hosting your bot, they have MANY issues which I covered in another article.
+Please do NOT use Heroku or Replit for hosting your bot, they have MANY issues which I covered in [another post](/posts/dont-use-free-hosting-services-for-the-love-of-god).
 
 ## Conclusion
 
