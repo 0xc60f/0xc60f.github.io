@@ -29,7 +29,7 @@ Even if they have good servers, you almost always have to pay for them, which de
 This means that your bot will be running on a machine that can barely handle it, and will be slow. This is especially bad if you're using a library like discord.py, which is already not the fastest.
 The problem could be mitigated with discord.js, but that's avoiding the problem, and it's still not going to be as fast as a VPS.
 So if you somehow want to have more than 3 commands that aren't ping commands, you're going to have a bad time.
-![img.png](/assets/underpoweredreplit.png)
+![img.png](/assets/no-free-hosting/underpoweredreplit.png)
 _This is JUST 13 lines of code for just multiplication, and it's already using almost 20% of the RAM. Imagine a Discord bot._
 
 ### Unreliable

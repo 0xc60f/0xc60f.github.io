@@ -59,4 +59,28 @@ export const SOCIALS: SocialObjects = [
     linkTitle: `${SITE.title} on Reddit`,
     active: true,
   },
+  {
+    name: "Mastodon",
+    href: "https://mastodon.social/@0xc60f",
+    linkTitle: `${SITE.title} on Mastodon`,
+    active: true,
+  },
+  {
+    name: "Steam",
+    href: "https://steamcommunity.com/profiles/76561199575889059/",
+    linkTitle: `${SITE.title} on Steam`,
+    active: true,
+  },
+  {
+    name: "Instagram",
+    href: "https://instagram.com/0xc60f",
+    linkTitle: `${SITE.title} on Instagram`,
+    active: true,
+  },
+  {
+    name: "Twitter",
+    href: "https://twitter.com/0xc60f",
+    linkTitle: `${SITE.title} on Twitter`,
+    active: true,
+  },
 ];
