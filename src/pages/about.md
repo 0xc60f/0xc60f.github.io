@@ -17,4 +17,4 @@ Some of my interests include:
 - Jailbreaking/Modding (I've modded every console in my house save for my Switch OLED)
 - Biking and Exploring Nature Trails (lots in Vancouver)
 - CAD and 3D Printing (I've done a lot of 3D printing working for engineering design teams)
-- Video Games (The 3 main franchises I adore are _Sonic_, _Zenless Zone Zero_, and _Xenoblade_)
+- Video Games (The 3 main franchises I adore are _Sonic the Hedgehog_, _Zenless Zone Zero_, and _Xenoblade Chronicles_)
