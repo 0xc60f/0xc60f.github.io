@@ -214,7 +214,7 @@ sudo apt install apache2-utils
 Next, create a password file for Nginx to use:
 
 ```bash
-sudo htpasswd -c /etc/nginx/.htpasswd -c yourusername
+sudo htpasswd -c /etc/nginx/.htpasswd yourusername
 ```
 _If you already have a password file, don't use the `-c` flag._
 
