@@ -63,16 +63,16 @@ To set up Nitter, you'll need:
   - You can also use a Raspberry Pi, a VPS, or your own computer, but it should have enough to run Nitter
   - Storage isn't really an issue with Nitter due to how it functions, but 20 GB of storage should be more than enough
 - [Docker installed on the server](https://docs.docker.com/engine/install/ubuntu/)
-- [Nginx installed on the server](https://nginx.org/en/docs/install.html)
-- Port 80 and 443 open on the server, you'll recieve connections on these ports
+- Port 80 and 443 open on the server, you'll receive connections on these ports
 - A burner Twitter account WITHOUT 2FA (you can use 2FA, but it makes deployment more complicated)
+- Your own domain (optional, but highly recommended)
 
 ### Installing Nitter's Docker Image
 
 First, make a new folder called `nitter` in your home directory, and navigate to it:
 
 ```bash
-mkdir -p /nitter && cd /nitter
+mkdir -p nitter && cd nitter
 ```
 
 Next, use the [docker-compose.yml file](https://github.com/zedeus/nitter/blob/master/docker-compose.yml) from the Nitter repository to set up the Docker container:
@@ -92,6 +92,8 @@ This can throw errors, so I have it set up as:
 test: wget -nv --tries=1 --spider http://127.0.0.1:8080 || exit 1
 ```
 This just tests the homepage to make sure it's alive, so it does the job fine.
+Another line I'd recommend changing for now is changing the "ports" line to `8080:8080`. This is so that we can publicly access it
+for testing. We'll change it back to `127.0.0.1:8080:8080` once we set up a reverse proxy with Nginx.
 
 Next, you'll want to take your Twitter account's credentials and insert them in [the linked sh file](/assets/setting-up-nitter-with-nginx/twitter-auth.sh).
 You can look in the code and check them to make sure your credentials are safe, but it just logs into Twitter by making API calls and getting the authorization token.
@@ -105,6 +107,7 @@ password="yourpassword"
 ```
 
 Once you've done that, run ```./twitter-auth.sh``` to get the token; if everything goes right, you should see something like this:
+_You may need to run `chmod +x twitter-auth.sh` in order for the file to be runnable._
 
 ```bash
 {"oauth_token":"xxxxxxxxxx-xxxxxxxxx","oauth_token_secret":"xxxxxxxxxxxxxxxxxxxxx"}
@@ -122,16 +125,17 @@ and complete the captch
 
 Once you have `sessions.jsonl` set up, the last file you'll need is [nitter.conf](https://github.com/zedeus/nitter/blob/master/nitter.example.conf), which is what Nitter uses to determine settings and what ports to run on.
 Make sure to edit settings like the hostname and proxying videos to configure it to your needs.
+If you're using docker-compose to set up Nitter, make sure you change the Redis server to nitter-redis, or else the container won't function properly.
 
 Once you have all the files set up, you can run the Docker container with:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 If all goes well, you should see the container running at http://yourserverip:8080.
 
-Go through your instance and make sure everything is working as expected. If you see any issues, check the logs with:
+Go to your instance and make sure everything is working as expected. If you see any issues, check the logs with:
 
 ```bash
 docker compose logs
@@ -202,7 +206,7 @@ Once you've done that, test the configuration file with:
 sudo nginx -t
 ```
 
-If it works, great! If it doesn't, we may need to create a password file for Nginx to use.
+If it works, great! Now, we'll need to make a password file for Nginx to use.
 
 ### Setting up a password
 First, install `apache2-utils` to use the `htpasswd` command:
@@ -214,7 +218,7 @@ sudo apt install apache2-utils
 Next, create a password file for Nginx to use:
 
 ```bash
-sudo htpasswd -c /etc/nginx/.htpasswd -c yourusername
+sudo htpasswd -c /etc/nginx/.htpasswd yourusername
 ```
 _If you already have a password file, don't use the `-c` flag._
 
@@ -244,6 +248,13 @@ sudo systemctl enable nginx
 && sudo systemctl restart nginx
 ```
 to apply your changes!
+
+The last thing we'll need to do is to move the nitter file to nginx's running directory
+
+Run this command
+```bash
+sudo ln -s /etc/nginx/sites-available/nitter /etc/nginx/sites-enabled/
+```
 
 Now, Nitter should be running on your server, and you should be able to access it at http://yourdomain.com.
 It'll ask you for a username and password, and once you enter it, you should be able to access your Nitter instance.
