@@ -3,34 +3,18 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+Hello! I'm 0xc60f, a college student who likes to code and make things. I'm currently studying
+Computer Science and Statistics at the University of British Columbia.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+## History
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+I got started with programming when I was introduced to [Scratch](https://scratch.mit.edu), and now it's stuck a lot.
+Currently, I'm working on a few projects, including this website, a multipurpose
+Discord bot, and a new grade tracker for Powershell school districts.
 
-<div>
-  <img src="/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+Some of my interests include:
 
-## Tech Stack
-
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
-
-## Features
-
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+- Jailbreaking/Modding (I've modded every console in my house save for my Switch OLED)
+- Biking and Exploring Nature Trails (lots in Vancouver)
+- CAD and 3D Printing (I've done a lot of 3D printing working for engineering design teams)
+- Video Games (The 3 main franchises I adore are _Sonic the Hedgehog_, _Zenless Zone Zero_, and _Xenoblade Chronicles_)
