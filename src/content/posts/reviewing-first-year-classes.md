@@ -1,11 +1,9 @@
 ---
-pubDatetime: 2025-04-25T19:46:49.337Z
+published: 2025-04-25
 title: Reviewing My First Year Classes
-featured: false
 draft: false
-tags:
-  - university
-ogImage: ""
+tags: [university]
+image: ""
 description: As I wrap up my first year of university, I take a look at the classes I took in my first year.
 ---
 

@@ -1,11 +1,10 @@
 ---
-pubDatetime: 2023-07-27T25:37:00Z
+published: 2023-07-27
 title: My new website 😀
-featured: true
 draft: false
-tags:
-  - announcement
-ogImage: ""
+tags: [announcement]
+category: updates
+image: ""
 description: An announcement of my new website.
 ---
 

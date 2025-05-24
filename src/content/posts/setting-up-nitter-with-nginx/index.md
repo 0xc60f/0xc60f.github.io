@@ -30,8 +30,9 @@ With these reasons in mind, I set out to set up my own instance of Nitter.
 
 ## Why don't you like Twitter?
 
-
-![no-more-twitter.jpg](no-more-twitter.jpg)
+<center>
+<img alt="no-more-twitter.jpg" src="/setting-up-nitter-with-nginx/no-more-twitter.jpg"/>
+</center>
 
 
 <div style="text-align: center;"><i>I hope I don't need to explain further</i></div>
@@ -263,5 +264,5 @@ To access an RSS feed, go to http://yourdomain.com/user/rss?key=YOURPASSWORD, wh
 This was no easy task, as it took me countless hours, a lot of ChatGPT and Stack Overflow, and some discussion on
 the Nitter Matrix instance, but I finally managed to get it working. This was certainly one of the most rewarding projects I've done,
 and now I can relax like Thanos.
-<iframe width="100%" height="468" src="https://youtu.be/nNozSVqbpeI" title="Thanos Video" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nNozSVqbpeI?si=Uqfi90-Hhm9_3Z0p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <div style="text-align: center;"><i>I'm exaggerating here, but I struggled quite a bit, so it was nice when all the puzzle pieces fit together.</i></div>

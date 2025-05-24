@@ -1,11 +1,10 @@
 ---
-pubDatetime: 2024-03-02T00:34:15.879Z
+published: 2024-03-02
 title: Finally Realized I Had a Website
-featured: true
 draft: false
-tags:
-  - personal
-ogImage: ""
+tags: [personal]
+category: updates
+image: ""
 description: I finally realized I had a website and decided to write a blog post.
 ---
 

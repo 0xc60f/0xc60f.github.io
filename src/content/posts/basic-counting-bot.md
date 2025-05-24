@@ -1,12 +1,10 @@
 ---
-pubDatetime: 2023-07-29T21:37:14.095Z
+published: 2023-07-29
 title: Counting Bot with Discord.py
-featured: false
 draft: false
-tags:
-  - discord.py
-  - projects
-ogImage: ""
+tags: [discord.py, projects]
+category: programming
+image: ""
 description: How to make a basic counting bot with discord.py.
 ---
 

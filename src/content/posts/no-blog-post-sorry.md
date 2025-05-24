@@ -1,12 +1,10 @@
 ---
-pubDatetime: 2025-04-11T18:56:00.431Z
+published: 2025-04-11
 title: No Blog Post This Week, Sorry
-featured: false
 draft: false
-tags:
-  - life
-  - blog-update
-ogImage: ""
+tags: [life, updates]
+category: updates
+image: ""
 description: I don't have the time to make a new post, but I've updated a previous one.
 ---
 
