@@ -1,5 +1,5 @@
 ---
-title: new-website-2.md
+title: New Website 2: Electric Boogaloo
 published: 2025-05-24
 description: 'A redesign of my website'
 image: ''
