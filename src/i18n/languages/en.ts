@@ -98,10 +98,10 @@ export const en: Translation = {
 
 	// Albums Page
 	[Key.albums]: "Albums",
-	[Key.albumsSubtitle]: "Record beautiful moments in life",
+	[Key.albumsSubtitle]: "A collection of interesting photos I've taken.",
 	[Key.albumsEmpty]: "No content",
 	[Key.albumsEmptyDesc]:
-		"No albums have been created yet. Go add some beautiful memories!",
+		"No albums have been created yet.",
 	[Key.albumsBackToList]: "Back to Albums",
 
 	// Devices Page

@@ -18,12 +18,12 @@ import { LinkPreset } from "./types/config";
 
 // 定义站点语言
 const SITE_LANG = "en"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
-const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
+const SITE_TIMEZONE = -8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
-	siteURL: "https://mizuki.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
-	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
+	title: "0xc60f",
+	subtitle: "The blog and portfolio of 0xc60f",
+	siteURL: "https://0xc60f.com/", // 请替换为你的站点URL，以斜杠结尾
+	siteStartDate: "2025-11-25", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
 
@@ -36,20 +36,20 @@ export const siteConfig: SiteConfig = {
 
 	// 特色页面开关配置(关闭不在使用的页面有助于提升SEO,关闭后直接在顶部导航删除对应的页面就行)
 	featurePages: {
-		anime: true, // 番剧页面开关
+		anime: false, // 番剧页面开关
 		diary: true, // 日记页面开关
-		friends: true, // 友链页面开关
-		projects: true, // 项目页面开关
-		skills: true, // 技能页面开关
-		timeline: true, // 时间线页面开关
+		friends: false, // 友链页面开关
+		projects: false, // 项目页面开关
+		skills: false, // 技能页面开关
+		timeline: false, // 时间线页面开关
 		albums: true, // 相册页面开关
-		devices: true, // 设备页面开关
+		devices: false, // 设备页面开关
 	},
 
 	// 顶栏标题配置
 	navbarTitle: {
 		// 顶栏标题文本
-		text: "MizukiUI",
+		text: "0xc60f",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
 		icon: "assets/home/home.png",
 	},
@@ -93,20 +93,20 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
-				"/assets/desktop-banner/5.webp",
-				"/assets/desktop-banner/6.webp",
+				"/assets/desktop-banner/1.jpeg",
+				"/assets/desktop-banner/2.jpeg",
+				"/assets/desktop-banner/3.jpeg",
+				"/assets/desktop-banner/4.jpeg",
+				"/assets/desktop-banner/5.jpeg",
+				"/assets/desktop-banner/6.jpeg",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
-				"/assets/mobile-banner/5.webp",
-				"/assets/mobile-banner/6.webp",
+				"/assets/mobile-banner/1.jpeg",
+				"/assets/mobile-banner/2.jpeg",
+				"/assets/mobile-banner/3.jpeg",
+				"/assets/mobile-banner/4.jpeg",
+				"/assets/mobile-banner/5.jpeg",
+				"/assets/mobile-banner/6.jpeg",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -135,15 +135,15 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "美しいミズキ", // 主页横幅主标题
+			title: "0xc60f", // 主页横幅主标题
 
-			subtitle: [
+			/*subtitle: [
 				"特別なことはないけど、君がいると十分です",
 				"今でもあなたは私の光",
 				"君ってさ、知らないうちに私の毎日になってたよ",
 				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
 				"今日はなんでもない日。でも、ちょっとだけいい日",
-			],
+			],*/
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
 
@@ -172,11 +172,11 @@ export const siteConfig: SiteConfig = {
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
 	favicon: [
 		// 留空以使用默认 favicon
-		// {
-		//   src: '/favicon/icon.png',    // 图标文件路径
-		//   theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		//   sizes: '32x32',              // 可选，图标大小
-		// }
+		 {
+		   src: '/favicon/favicon.ico',    // 图标文件路径
+		   theme: 'light',              // 可选，指定主题 'light' | 'dark'
+		   sizes: '32x32',              // 可选，图标大小
+		 }
 	],
 
 	// 字体配置
@@ -204,20 +204,20 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
-			"/assets/desktop-banner/5.webp",
-			"/assets/desktop-banner/6.webp",
+            "/assets/desktop-banner/1.jpeg",
+            "/assets/desktop-banner/2.jpeg",
+            "/assets/desktop-banner/3.jpeg",
+            "/assets/desktop-banner/4.jpeg",
+            "/assets/desktop-banner/5.jpeg",
+            "/assets/desktop-banner/6.jpeg",
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
-			"/assets/mobile-banner/4.webp",
-			"/assets/mobile-banner/5.webp",
-			"/assets/mobile-banner/6.webp",
+            "/assets/mobile-banner/1.jpeg",
+            "/assets/mobile-banner/2.jpeg",
+            "/assets/mobile-banner/3.jpeg",
+            "/assets/mobile-banner/4.jpeg",
+            "/assets/mobile-banner/5.jpeg",
+            "/assets/mobile-banner/6.jpeg",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
@@ -241,23 +241,29 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:link",
 			children: [
 				{
-					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
+					name: "Twitter/X",
+					url: "https://x.com/0xc60f",
 					external: true,
-					icon: "fa6-brands:github",
+					icon: "fa6-brands:x-twitter",
 				},
 				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
+					name: "Mastodon",
+					url: "https://mstdn.ca/@0xc60f",
 					external: true,
-					icon: "fa6-brands:bilibili",
+					icon: "fa6-brands:mastodon",
 				},
 				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					name: "Bluesky",
+					url: "https://bsky.app/profile/0xc60f.com",
 					external: true,
-					icon: "mdi:git",
+					icon: "fa6-brands:bluesky",
 				},
+                {
+                    name: "Reddit",
+                    url: "https://reddit.com/u/x0xc06f",
+                    external: true,
+                    icon: "fa6-brands:reddit",
+                },
 			],
 		},
 		{
@@ -265,11 +271,11 @@ export const navBarConfig: NavBarConfig = {
 			url: "/content/",
 			icon: "material-symbols:person",
 			children: [
-				{
+				/*{
 					name: "Anime",
 					url: "/anime/",
 					icon: "material-symbols:movie",
-				},
+				},*/
 				{
 					name: "Diary",
 					url: "/diary/",
@@ -280,12 +286,12 @@ export const navBarConfig: NavBarConfig = {
 					url: "/albums/",
 					icon: "material-symbols:photo-library",
 				},
-				{
+				/*{
 					name: "Devices",
 					url: "devices/",
 					icon: "material-symbols:devices",
 					external: false,
-				},
+				},*/
 			],
 		},
 		{
@@ -298,14 +304,14 @@ export const navBarConfig: NavBarConfig = {
 					url: "/about/",
 					icon: "material-symbols:person",
 				},
-				{
+				/*{
 					name: "Friends",
 					url: "/friends/",
 					icon: "material-symbols:group",
-				},
+				},*/
 			],
 		},
-		{
+		/*{
 			name: "Others",
 			url: "#",
 			icon: "material-symbols:more-horiz",
@@ -326,43 +332,38 @@ export const navBarConfig: NavBarConfig = {
 					icon: "material-symbols:timeline",
 				},
 			],
-		},
+		},*/
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "Matsuzaka Yuki",
-	bio: "The world is big, you have to go and see",
+	avatar: "assets/images/avatar.jpeg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "0xc60f",
+	bio: "Find something to break, and fix it",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
 	},
 	links: [
 		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
-		},
-		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
-		},
-		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/0xc60f",
 		},
 		{
-			name: "Codeberg",
-			icon: "simple-icons:codeberg",
-			url: "https://codeberg.org",
+			name: "Steam",
+			icon: "fa6-brands:steam",
+			url: "https://steamcommunity.com/id/0xc60f/",
+		},
+		{
+			name: "YouTube",
+			icon: "fa6-brands:youtube",
+			url: "https://youtube.com/@0xc60f",
 		},
 		{
 			name: "Discord",
 			icon: "fa6-brands:discord",
-			url: "https://discord.gg/MqW6TcQtVM",
+			url: "https://discord.com/users/942859618130989087",
 		},
 	],
 };
@@ -391,7 +392,7 @@ export const commentConfig: CommentConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "Announcement", // 公告标题
-	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
+	content: "Welcome to my blog! Learn more about me!", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -402,7 +403,7 @@ export const announcementConfig: AnnouncementConfig = {
 };
 
 export const musicPlayerConfig: MusicPlayerConfig = {
-	enable: true, // 启用音乐播放器功能
+	enable: false, // 启用音乐播放器功能
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://www.bilibili.uno/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
@@ -601,7 +602,7 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: true, // 启用看板娘
+	enable: false, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 默认位置在右侧
 	width: 280, // 默认宽度
@@ -613,7 +614,6 @@ export const pioConfig: import("./types/config").PioConfig = {
 		touch: [
 			"What are you doing?",
 			"Stop touching me!",
-			"HENTAI!",
 			"Don't bully me like that!",
 		], // 触摸提示
 		home: "Click here to go back to homepage!", // 首页提示

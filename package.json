@@ -22,6 +22,7 @@
 		"test-font-compression": "node scripts/test-font-compression.js"
 	},
 	"dependencies": {
+		"-": "^0.0.1",
 		"@astrojs/check": "^0.9.5",
 		"@astrojs/rss": "^4.0.14",
 		"@astrojs/sitemap": "^3.6.0",
@@ -44,6 +45,7 @@
 		"astro": "5.16.0",
 		"astro-expressive-code": "^0.41.3",
 		"astro-icon": "^1.1.5",
+		"baseline-browser-mapping": "^2.8.31",
 		"bcryptjs": "^3.0.3",
 		"crypto-js": "^4.2.0",
 		"dayjs": "^1.11.19",
