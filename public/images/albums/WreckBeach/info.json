@@ -1,0 +1,10 @@
+{
+  "title": "Wreck Beach",
+  "hidden": false,
+  "description": "Some photos of Wreck Beach I've taken over the months",
+  "date": "2025-11-24",
+  "location": "Vancouver, BC.",
+  "tags": ["Nature"],
+  "layout": "masonry",
+  "columns": 3
+}
