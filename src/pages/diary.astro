@@ -20,24 +20,21 @@ function formatTime(dateString: string): string {
 	if (siteConfig.timeZone >= -12 && siteConfig.timeZone <= 12)
 		TG = siteConfig.timeZone;
 	const timeGap = TG;
-
 	const lang = siteConfig.lang;
 	const now = new Date();
 	const date = new Date(dateString);
-	const diffInMinutes = Math.floor(
-		(now.getTime() + timeGap * 60 * 60 * 1000 - date.getTime()) / (1000 * 60),
-	);
+    const diffInMinutes = Math.floor((now.getTime() - date.getTime()) / (1000 * 60));
 
 	if (diffInMinutes < 60) {
-		return `${diffInMinutes}${i18n(I18nKey.diaryMinutesAgo)}`;
+		return `${diffInMinutes} ${i18n(I18nKey.diaryMinutesAgo)}`;
 	}
 	if (diffInMinutes < 1440) {
 		// 24小时
 		const hours = Math.floor(diffInMinutes / 60);
-		return `${hours}${i18n(I18nKey.diaryHoursAgo)}`;
+		return `${hours} ${i18n(I18nKey.diaryHoursAgo)}`;
 	}
 	const days = Math.floor(diffInMinutes / 1440);
-	return `${days}${i18n(I18nKey.diaryDaysAgo)}`;
+	return `${days} ${i18n(I18nKey.diaryDaysAgo)}`;
 }
 ---
 
