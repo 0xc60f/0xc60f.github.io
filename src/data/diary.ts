@@ -17,9 +17,17 @@ const diaryData: DiaryItem[] = [
 		id: 1,
 		content:
 			"Think I got this set up",
-		date: "2025-11-25T23:03:20Z",
+		date: "2025-11-25T23:03:20.000Z",
 		images: ["/images/diary/1/sonic.jpeg"],
 	},
+    {
+        id: 2,
+        content:
+            "It's been 2 months since I last updated Gradexis. Might be a bit overdue to push a new build to " +
+            "the App Store.",
+        date: "2025-11-26T23:46:00.653Z",
+        images: ["/images/diary/2/folk.jpeg", "/images/diary/2/whatdoesitmean.jpeg"],
+    },
 ];
 
 // 获取日记统计数据
